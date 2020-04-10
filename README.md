@@ -71,7 +71,5 @@
 ## Feature Selection
 - Select subset of features that allows a classifier to reach optimal performance
 
--> Data Pre-processing and Boosting are effective
-
 ## Reference
 - Class Imbalance Problem in Data Mining: Review [[paper]](https://arxiv.org/pdf/1305.1707.pdf)
