@@ -8,15 +8,34 @@
 - Manage Risk and Predict Failures of Technical Equipment
 
 
-## Categories for Solving Class Imbalance
-- Data Pre-processing Approach (Sampling)
-- Algorithmic Approach
-- Combination : Sampling + Algorithm (sampling + boosting)
-- Feature Selection Approach
+## Characteristic of Imbalanced Data
+- Overlapping small disjuncts
+- Lack of density
+- Noise
+- Dataset shift
 
 
 # Metric
 - Geometric mean score (G-mean score)
+- True Positive Rate (TPR, recall, sensitivity)
+- True Negative Rate (TNR, specificity, selectivity)
+- False Positive Rate (FPR, fall-out)
+- False Negative Rate (FNR, miss rate)
+- Positive Predictive Value (PPV, Precision)
+- Negative Predictive Value (NPV)
+- False Discovery Rate (FDR)
+- False Omission Rate (FOR)
+- Area Under Curve of Receiver Operating Characteristic curve (AUC of ROC curve)
+- Area Under Curve of Precision Recall curve (AUC of PR curve)
+- F1 Score
+- Mathews Correlation Coefficient (MCC)
+
+
+## Categories for Solving Class Imbalance
+- Data Pre-processing Approach (Sampling)
+- Algorithmic Approach
+- Combination : Sampling + Algorithm (e.g. sampling + boosting)
+- Feature Selection Approach
 
 
 ## Data Pre-processing Approach (Sampling)
@@ -35,6 +54,7 @@
      * Cons : Learning process consume more time
 * Clustering-sampling
 * Combination : Over-sampling + Under-sampling
+
 
 ## Algorithmic Approach
 - One-class Learning Method
@@ -72,4 +92,5 @@
 - Select subset of features that allows a classifier to reach optimal performance
 
 ## Reference
+- Data Imbalance: Effects and Solutions for Classification of Large and Highly Imbalanced Data [[paper]](https://www.researchgate.net/publication/320895020_Data_Imbalance_Effects_and_Solutions_for_Classification_of_Large_and_Highly_Imbalanced_Data)
 - Class Imbalance Problem in Data Mining: Review [[paper]](https://arxiv.org/pdf/1305.1707.pdf)
