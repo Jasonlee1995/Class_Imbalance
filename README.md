@@ -2,10 +2,10 @@
 
 
 ## Major Field Suffer from Class Imbalance
-- Medical Diagnosis Prediction
-- Fraud Detection in Banking Operations
-- Detection in Network Intrusions
-- Manage Risk and Predict Failures of Technical Equipment
+- Medical Diagnosis
+- Fraud Detection
+- Network Intrusion Detection
+- Fault Monitoring
 
 
 ## Characteristic of Imbalanced Data
@@ -15,20 +15,20 @@
 - Dataset shift
 
 
-# Metric
-- Geometric mean score (G-mean score)
-- True Positive Rate (TPR, recall, sensitivity)
-- True Negative Rate (TNR, specificity, selectivity)
-- False Positive Rate (FPR, fall-out)
-- False Negative Rate (FNR, miss rate)
-- Positive Predictive Value (PPV, Precision)
-- Negative Predictive Value (NPV)
-- False Discovery Rate (FDR)
-- False Omission Rate (FOR)
-- Area Under Curve of Receiver Operating Characteristic curve (AUC of ROC curve)
-- Area Under Curve of Precision Recall curve (AUC of PR curve)
-- F1 Score
-- Mathews Correlation Coefficient (MCC)
+## Evaluation Metrics
+- Purpose : monitor classification performance on each individual class
+  * Sensitivity (True Positive Rate)
+  * Specificity (True Negative Rate)
+- Purpose : interested in high performance on only one class
+  * Precision
+- Purpose : performance on majority and minority classes needed to be high
+  * G-mean (Geometric-mean)
+  * F-measure
+- Purpose : visualize and summarize the performance of classifier based on trade off between true positive rate and false positive rate
+  * ROC curve and AUC (Receiver Operating Characteristic curve and Area Under Curve)
+- Purpose : metrics for cost sensitive classifiers which measure cost misclassifying errors
+  * cost matrix
+  * cost curve
 
 
 ## Categories for Solving Class Imbalance
@@ -36,6 +36,11 @@
 - Algorithmic Approach
 - Combination : Sampling + Algorithm (e.g. sampling + boosting)
 - Feature Selection Approach
+/////
+- Sampling Methods
+- Cost Sensitive Learning
+- Recognition Based Methods
+- Ensemble Based Methods
 
 
 ## Data Pre-processing Approach (Sampling)
@@ -92,5 +97,7 @@
 - Select subset of features that allows a classifier to reach optimal performance
 
 ## Reference
+- A Review on Class Imbalance Problem: Analysis and Potential Solutions [[paper]](https://www.ijcsi.org/papers/IJCSI-14-6-43-51.pdf)
 - Data Imbalance: Effects and Solutions for Classification of Large and Highly Imbalanced Data [[paper]](https://www.researchgate.net/publication/320895020_Data_Imbalance_Effects_and_Solutions_for_Classification_of_Large_and_Highly_Imbalanced_Data)
 - Class Imbalance Problem in Data Mining: Review [[paper]](https://arxiv.org/pdf/1305.1707.pdf)
+- A Review of Class Imbalance Problem [[paper]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.478.2298&rep=rep1&type=pdf)
